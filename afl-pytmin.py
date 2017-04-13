@@ -1,4 +1,7 @@
 #!/env/python
+#
+# python afl-pytmin.py <input-dir> <output-dir> <harness-bin>
+#
 
 import sys
 import os

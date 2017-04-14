@@ -29,7 +29,7 @@ def tmin(workerid, queue, output_dirname, harness_bin):
             "-o",
             output_path,
             "-t",
-            "2000",
+            "3000",
             "--",
             harness_bin,
             "@@"
@@ -39,7 +39,7 @@ def tmin(workerid, queue, output_dirname, harness_bin):
 
         with open(os.devnull, 'w') as devnull:
             p = subprocess.Popen(args, stdout=devnull, stderr=devnull, shell=False)
-            p.communicate()
+            # p.communicate()
             p.wait()
 
         # p.stdout.close()

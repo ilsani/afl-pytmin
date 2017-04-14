@@ -30,6 +30,8 @@ def tmin(workerid, queue, output_dirname, harness_bin):
             output_path,
             "-t",
             "3000",
+            "-m",
+            "4096",
             "--",
             harness_bin,
             "@@"
